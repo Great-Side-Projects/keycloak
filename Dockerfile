@@ -2,8 +2,11 @@
 FROM quay.io/keycloak/keycloak:latest
 
 ARG KC_DB_URL
+ARG KC_DB_USERNAME
+ARG KC_DB_PASSWORD
+ARG KEYCLOAK_ADMIN
+ARG KEYCLOAK_ADMIN_PASSWORD
 
-RUN echo "KC_DB_URL={$KC_DB_URL}"
 # Establecer variables de entorno
 ENV KC_DB_URL=${KC_DB_URL} \
     KC_DB=postgres \
