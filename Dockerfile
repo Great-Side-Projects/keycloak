@@ -1,6 +1,8 @@
 # Usar la imagen base de Keycloak
 FROM quay.io/keycloak/keycloak:latest
 
+ARG KC_DB_URL
+
 RUN echo "KC_DB_URL={$KC_DB_URL}"
 # Establecer variables de entorno
 ENV KC_DB_URL=${KC_DB_URL} \
