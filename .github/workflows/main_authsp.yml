@@ -30,6 +30,13 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
+        build-args: |
+          KC_DB_URL=${{ secrets.KC_DB_URL }}
+          KC_DB_USERNAME=${{ secrets.KC_DB_USERNAME }}
+          KC_DB_PASSWORD=${{ secrets.KC_DB_PASSWORD }}
+          KEYCLOAK_ADMIN=${{ secrets.KEYCLOAK_ADMIN }}
+          KEYCLOAK_ADMIN_PASSWORD=${{ secrets.KEYCLOAK_ADMIN_PASSWORD }}
+
         tags: mykeycloakregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_fdca1a917aeb4fc5a89e8f8cfc6030ee }}/mykeycloak:${{ github.sha }}
         file: ./Dockerfile
 
