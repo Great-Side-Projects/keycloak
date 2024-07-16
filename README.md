@@ -209,7 +209,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Angel Morales - [LinkedIn](https://www.linkedin.com/in/angelmoralesb/) - angelmoralesb@gmail.com
 
-Project Link: [https://github.com/Great-Side-Projects/quickshortapi](https://github.com/Great-Side-Projects/quickshortapi)
+Project Link: [https://github.com/Great-Side-Projects/keycloak](https://github.com/Great-Side-Projects/keycloak)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
