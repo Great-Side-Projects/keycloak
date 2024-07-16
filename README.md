@@ -98,8 +98,8 @@ Here you can find the steps to run the project in your local environment to expl
 
 This is an example of how to list things you need to use the software and how to install them.
 
-You need to have a database created in PostgreSQL, for example "kecloak" see https://www.keycloak.org/server/db . 
-
+You need to have a database created in PostgreSQL, for example "kecloak" see https://www.keycloak.org/server/db.
+#### Note: the first time you run the project, the database will be created automatically and take more time to start the keycloak server. 
 
 * Docker
 * PostgresSQL database
@@ -134,15 +134,21 @@ You need to have a database created in PostgreSQL, for example "kecloak" see htt
     docker build -t keycloak:latest .
     docker run -p 9090:8080 keycloak:latest
    ```
-8. Open your browser and go to `http://localhost:9090/` to see the UI keycloak login.
-9. Login with the user and password that you have configured in the dockerfile.
+5. Open your browser and go to `http://localhost:9090/` to see the UI keycloak login.
+6. Login with the user and password that you have configured in the dockerfile.
     ```dockerfile
     ENV
         KEYCLOAK_USER=admin
         KEYCLOAK_PASSWORD=admin
     ```
-10. Enjoy!
+7. Enjoy!
 
+if maybe you have an error with the https required, you can run the following query in the database to try fix it.
+https://keycloak.discourse.group/t/https-required-error-in-keycloak/3750
+```sql
+update REALM set ssl_required='NONE' where id = 'master';
+```
+Note - Restart keycloak for effect
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
