@@ -244,7 +244,7 @@ Project Link: [https://github.com/Great-Side-Projects/quickshortapi](https://git
 [DockerImage]: https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white
 [AzureWebApp]: https://img.shields.io/badge/Azure%20Web%20App-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white
 [PostgreSQL]: https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white
-[architecture-diagram]: images/architecture-diagram.png
+[architecture-diagram]: images/Keycloak-Architecture-Design.drawio.png
 
 
 
