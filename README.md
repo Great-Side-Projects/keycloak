@@ -1,6 +1,6 @@
 # keycloak
-Implementation of keycloak in azure application services
+Implementation of keycloack in azure application services
 
 ## URL Keycloak web application
-https://keycloak.azurewebsites.net
+https://authsp.azurewebsites.net
 
