@@ -1,5 +1,5 @@
 # Usar la imagen base de Keycloak
-FROM quay.io/keycloak/keycloak:latest
+FROM quay.io/keycloak/keycloak:25.0.2
 
 ARG KC_DB_URL
 ARG KC_DB_USERNAME
