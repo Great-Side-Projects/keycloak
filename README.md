@@ -79,7 +79,7 @@ This project is built with the following technologies:
 
 ### Architecture design
 
-The architecture design is based in Azure cloud services, the project is deployed in Azure App Service, the database is Azure SQL Database, the CI/CD is GitHub Actions.
+The architecture design is based in Azure cloud services, the project is deployed in Azure App Service, the database is Azure postgres Database, the CI/CD is GitHub Actions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +98,7 @@ Here you can find the steps to run the project in your local environment to expl
 
 This is an example of how to list things you need to use the software and how to install them.
 
-You need to have a database created in PostgreSQL, for example "kecloak" see https://www.keycloak.org/server/db.
+You need to have a database created in PostgreSQL, for example "keycloak" see https://www.keycloak.org/server/db.
 #### Note: the first time you run the project, the database will be created automatically and take more time to start the keycloak server. 
 
 * Docker
